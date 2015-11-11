@@ -18,7 +18,6 @@ You will need the following things properly installed on your computer.
 * `git clone https://github.com/fenichelar/GTFriender-Web-Server`
 * `cd GTFriender-Web-Server`
 * `npm install`
-* `bower install`
 
 ## Running for Development
 
