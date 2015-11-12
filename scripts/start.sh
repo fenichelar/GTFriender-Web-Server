@@ -1,8 +1,10 @@
 #!/bin/bash
 
+SCRIPT_PATH=$(cd "$(dirname "$0")" && pwd)
+
 if [[ $* == *--dev* ]]
   then
-    forever -w start app.js
+    forever -w --sourceDir $SCRIPT_PATH/.. start app.js
   else
-    forever -w start app.js --prod
+    forever -w --sourceDir $SCRIPT_PATH/.. start app.js --prod
 fi
