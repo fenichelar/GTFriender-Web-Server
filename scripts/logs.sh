@@ -1,3 +1,3 @@
 #!/bin/bash
 
-forever logs 0 -f
+forever logs app.js -f

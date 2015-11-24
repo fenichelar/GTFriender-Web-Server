@@ -21,14 +21,16 @@ You will need the following things properly installed on your computer.
 
 ## Running for Development
 
-* `./scripts/start.sh --dev`
-* `./scripts/logs.sh` (optional)
+* Use one of the following
+  - `./scripts/start.sh` (start in development mode)
+  - `./scripts/start.sh --log` (start in development mode and view log)
+  - `./scripts/start.sh --prod` (start in production mode)
 * Visit the app at [http://localhost:1337](http://localhost:1337)
 * The app with automatically update when code changes are made
 
-## Running for Production
+## View Log
 
-* `./scripts/start.sh`
+* `./scripts/logs.sh`
 
 ## Stopping
 
