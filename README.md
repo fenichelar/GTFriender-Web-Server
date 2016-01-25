@@ -18,6 +18,10 @@ You will need the following things properly installed on your computer.
   - `npm install -g sails`
 * [Forever](https://github.com/foreverjs/forever)
   - `npm install -g forever`
+* [Mocha](https://mochajs.org/)
+  - `npm install -g mocha`
+* [Istanbul](https://github.com/gotwarlost/istanbul)
+  - `npm install -g istanbul`
 
 ## Installation
 
