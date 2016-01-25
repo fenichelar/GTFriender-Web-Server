@@ -37,7 +37,7 @@ You will need the following things properly installed on your computer.
   - `./scripts/start.sh` (start in development mode)
   - `./scripts/start.sh --log` (start in development mode and view log)
   - `./scripts/start.sh --prod` (start in production mode)
-* Visit the app at [http://localhost:1337](http://localhost:1337)
+* Visit the app at [http://gtfriender.dev:1337](http://gtfriender.dev:1337)
 * The app with automatically update when code changes are made
 
 ### Viewing  Log
