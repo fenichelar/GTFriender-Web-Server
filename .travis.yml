@@ -26,6 +26,9 @@ after_script:
   - npm run coverage
   - codeclimate-test-reporter < coverage/lcov.info
 
+after_success:
+  - ./scripts/deliver.sh
+
 deploy:
   provider: script
   script: curl -u $USER:$PASSWORD $URL
