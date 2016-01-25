@@ -46,6 +46,22 @@ You will need the following things properly installed on your computer.
 
 * `./scripts/stop.sh`
 
+### Code Generators
+
+Make use of the many generators for code, see [http://sailsjs.org/documentation/reference/command-line-interface/sails-generate](http://sailsjs.org/documentation/reference/command-line-interface/sails-generate) for more details.
+
+### Running Tests
+
+* `npm test`
+
+### Checking Code Coverage
+
+* `npm run coverage`
+
+### Deploying
+
+The app is deployed automatically using Travis CI.
+
 [travis-badge]: https://travis-ci.org/fenichelar/GTFriender-Web-Server.svg
 [travis-badge-url]: https://travis-ci.org/fenichelar/GTFriender-Web-Server
 [david-badge]: https://david-dm.org/fenichelar/GTFriender-Web-Server.svg
