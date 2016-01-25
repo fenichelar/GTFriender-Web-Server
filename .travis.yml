@@ -20,6 +20,7 @@ install:
   - npm install -g codeclimate-test-reporter
   - npm install -g mocha
   - npm install -g istanbul
+  - npm install -g sails
   - npm install
 
 script:
