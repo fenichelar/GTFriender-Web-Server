@@ -29,7 +29,9 @@ You will need the following things properly installed on your computer.
 * `cd GTFriender-Web-Server`
 * `npm install`
 
-## Running for Development
+## Development
+
+### Running
 
 * Use one of the following
   - `./scripts/start.sh` (start in development mode)
@@ -38,11 +40,11 @@ You will need the following things properly installed on your computer.
 * Visit the app at [http://localhost:1337](http://localhost:1337)
 * The app with automatically update when code changes are made
 
-## View Log
+### Viewing  Log
 
 * `./scripts/logs.sh`
 
-## Stopping
+### Stopping
 
 * `./scripts/stop.sh`
 
@@ -58,7 +60,7 @@ Make use of the many generators for code, see [http://sailsjs.org/documentation/
 
 * `npm run coverage`
 
-### Deploying
+## Deploying
 
 The app is deployed automatically using Travis CI.
 
