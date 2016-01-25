@@ -3,8 +3,8 @@
 # gem 'pivotal-tracker'
 require 'pivotal-tracker'
 
-TRACKER_TOKEN = "..."
-TRACKER_PROJECT_ID = "..."
+TRACKER_TOKEN = "$TRACKER_ACCOUNT_TOKEN"
+TRACKER_PROJECT_ID = "1521279"
 
 PivotalTracker::Client.token = TRACKER_TOKEN
 PivotalTracker::Client.use_ssl = true
