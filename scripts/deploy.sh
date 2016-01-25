@@ -58,6 +58,6 @@ echo "</div>"
 
 echo "</body>"
 
-echo "</head>"
+echo "</html>"
 
 exit 0

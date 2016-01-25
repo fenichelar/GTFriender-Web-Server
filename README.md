@@ -1,5 +1,11 @@
 # GTFriender Web Server
 
+[![Build Status][travis-badge]][travis-badge-url]
+[![Dependency Status][david-badge]][david-badge-url]
+[![devDependency Status][david-badge-dev]][david-badge-dev-url]
+[![Code Climate][codeclimate]][codeclimate-url]
+[![Test Coverage][codeclimate-coverage]][codeclimate-coverage-url]
+
 GTFriender Web Server written in JavaScript with Sails.js.
 
 ## Prerequisites
@@ -35,3 +41,14 @@ You will need the following things properly installed on your computer.
 ## Stopping
 
 * `./scripts/stop.sh`
+
+[travis-badge]: https://travis-ci.org/fenichelar/GTFriender-Web-Server.svg
+[travis-badge-url]: https://travis-ci.org/fenichelar/GTFriender-Web-Server
+[david-badge]: https://david-dm.org/fenichelar/GTFriender-Web-Server.svg
+[david-badge-url]: https://david-dm.org/fenichelar/GTFriender-Web-Server
+[david-badge-dev]: https://david-dm.org/fenichelar/GTFriender-Web-Server/dev-status.svg
+[david-badge-dev-url]: https://david-dm.org/fenichelar/GTFriender-Web-Server#info=devDependencies
+[codeclimate]: https://codeclimate.com/github/fenichelar/GTFriender-Web-Server/badges/gpa.svg
+[codeclimate-url]: https://codeclimate.com/github/fenichelar/GTFriender-Web-Server
+[codeclimate-coverage]: https://codeclimate.com/github/fenichelar/GTFriender-Web-Server/badges/coverage.svg
+[codeclimate-coverage-url]: https://codeclimate.com/github/fenichelar/GTFriender-Web-Server/coverage
