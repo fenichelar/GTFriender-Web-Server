@@ -9,22 +9,22 @@ module.exports = {
 
   attributes: {
     username: {
-      type: 'string',
+      type: 'alphanumeric',
       unique: true,
       primaryKey: true,
       required: true
     },
     email: {
-      type: 'string',
+      type: 'email',
       unique: true,
       required: true
     },
     first_name: {
-      type: 'string',
+      type: 'alpha',
       required: true
     },
     last_name: {
-      type: 'string',
+      type: 'alpha',
       required: true
     },
     events: {
@@ -34,6 +34,14 @@ module.exports = {
     comments: {
       collection: 'comments',
       via: 'user'
+    },
+    get_full_name: function () {
+      return this.first_name + ' ' + this.last_name;
+    },
+    toJSON : function(){
+      var obj = this.toObject();
+      obj.full_name = this.get_full_name();
+      return obj;
     }
   }
 };

@@ -9,16 +9,16 @@ module.exports = {
 
   attributes: {
     name: {
-      type: 'string',
+      type: 'alphanumericdashed',
       required: true
     },
     location: {
       type: 'string',
-      defaut: '',
+      defaut: 'None',
       required: false
     },
     time: {
-      type: 'string',
+      type: 'datetime',
       required: true
     },
     activity: {

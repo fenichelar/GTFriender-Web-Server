@@ -12,10 +12,6 @@ module.exports = {
       type: 'string',
       required: true
     },
-    time: {
-      type: 'string',
-      required: true
-    },
     user: {
       model: 'users',
       required: true

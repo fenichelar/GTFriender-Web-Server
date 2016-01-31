@@ -11,7 +11,6 @@ module.exports = {
     name: {
       type: 'string',
       unique: true,
-      primaryKey: true,
       required: true
     },
     activities: {
