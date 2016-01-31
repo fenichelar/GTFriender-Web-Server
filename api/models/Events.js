@@ -1,0 +1,37 @@
+/**
+* Events.js
+*
+* @description :: TODO: You might write a short summary of how this model works and what it represents here.
+* @docs        :: http://sailsjs.org/#!documentation/models
+*/
+
+module.exports = {
+
+  attributes: {
+    name: {
+      type: 'string',
+      required: true
+    },
+    location: {
+      type: 'string',
+      defaut: '',
+      required: false
+    },
+    time: {
+      type: 'string',
+      required: true
+    },
+    activity: {
+      model: 'activities',
+      required: true
+    },
+    comments: {
+      collection: 'comments',
+      via: 'event'
+    },
+    users: {
+      collection: 'users',
+      via: 'events'
+    }
+  }
+};
