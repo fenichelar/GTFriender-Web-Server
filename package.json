@@ -26,10 +26,12 @@
     "jshint": "^2.9.1",
     "mocha": "^2.3.4",
     "rc": "~0.5.0",
-    "sails": "~0.11.4",
+    "sails": "~0.12.0-rc6",
     "sails-disk": "~0.10.0",
     "sails-mongo": "^0.12.0",
-    "supertest": "^1.1.0"
+    "sails-swagger": "^0.5.1",
+    "supertest": "^1.1.0",
+    "swagger-ui": "^2.1.4"
   },
   "scripts": {
     "debug": "node debug app.js",

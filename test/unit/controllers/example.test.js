@@ -1,9 +1,9 @@
 var request = require('supertest');
 
-describe('GET /', function(){
-  it('respond with homepage', function(done){
+describe('GET /docs/', function(){
+  it('respond with documentation', function(done){
     request(sails.hooks.http.app)
-      .get('/')
+      .get('/docs/')
       .expect(200, done);
   });
 });
