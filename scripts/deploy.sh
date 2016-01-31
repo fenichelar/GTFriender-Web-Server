@@ -39,8 +39,9 @@ echo "</div>"
 echo "<br>"
 
 echo "<div>"
-echo "<h3>Updating Packages...</h3>"
+echo "<h3>Installing/Updating Packages...</h3>"
 echo "<p>"
+cd $REPO_PATH && sudo -u travis npm install
 cd $REPO_PATH && sudo -u travis npm update
 echo "</p>"
 echo "<b>Done.</b>"
