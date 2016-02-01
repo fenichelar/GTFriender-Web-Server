@@ -20,7 +20,7 @@ echo "<h1>Deploy Status</h1>"
 echo "<div>"
 echo "<h3>Stopping Server...</h3>"
 echo "<p>"
-cd $REPO_PATH && sudo -u travis forever stopall
+cd $REPO_PATH && sudo -u travis ./scripts/stop.sh
 echo "</p>"
 echo "<b>Done.</b>"
 echo "</div>"
@@ -30,7 +30,7 @@ echo "<br>"
 echo "<div>"
 echo "<h3>Pulling Changes...</h3>"
 echo "<p>"
-cd $REPO_PATH && sudo -u travis git checkout .
+cd $REPO_PATH && sudo -u travis git checkout master
 cd $REPO_PATH && sudo -u travis git pull
 echo "</p>"
 echo "<b>Done.</b>"
@@ -52,7 +52,7 @@ echo "<br>"
 echo "<div>"
 echo "<h3>Starting Server...</h3>"
 echo "<p>"
-cd $REPO_PATH && sudo -u travis forever -w start app.js --prod
+cd $REPO_PATH && sudo -u travis ./scripts/start.sh --prod
 echo "</p>"
 echo "<b>Done.</b>"
 echo "</div>"
