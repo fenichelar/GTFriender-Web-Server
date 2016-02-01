@@ -31,7 +31,7 @@ echo "<br>"
 echo "<div>"
 echo "<h3>Pulling Changes...</h3>"
 echo "<p>"
-cd $REPO_PATH && sudo -u travis git checkout master
+cd $REPO_PATH && sudo -u travis git checkout master .
 cd $REPO_PATH && sudo -u travis git pull
 echo "</p>"
 echo "<b>Done.</b>"
