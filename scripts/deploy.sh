@@ -53,7 +53,7 @@ echo "<br>"
 echo "<div>"
 echo "<h3>Starting Server...</h3>"
 echo "<p>"
-cd $REPO_PATH && sudo -u travis forever -w start app.js --prod
+cd $REPO_PATH && sudo forever -w start app.js --prod
 echo "</p>"
 echo "<b>Done.</b>"
 echo "</div>"
