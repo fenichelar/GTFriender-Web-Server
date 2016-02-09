@@ -13,7 +13,7 @@ module.exports = {
       required: true
     },
     user: {
-      model: 'users',
+      model: 'user',
       required: true
     },
     event: {

@@ -30,7 +30,7 @@ module.exports = {
       via: 'event'
     },
     users: {
-      collection: 'users',
+      collection: 'user',
       via: 'events'
     }
   }

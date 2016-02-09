@@ -1,5 +1,5 @@
 /**
-* Users.js
+* User.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
@@ -8,12 +8,6 @@
 module.exports = {
 
   attributes: {
-    username: {
-      type: 'alphanumeric',
-      unique: true,
-      primaryKey: true,
-      required: true
-    },
     email: {
       type: 'email',
       unique: true,
@@ -21,11 +15,11 @@ module.exports = {
     },
     first_name: {
       type: 'alpha',
-      required: true
+      required: false
     },
     last_name: {
       type: 'alpha',
-      required: true
+      required: false
     },
     events: {
       collection: 'events',
@@ -34,14 +28,6 @@ module.exports = {
     comments: {
       collection: 'comments',
       via: 'user'
-    },
-    get_full_name: function () {
-      return this.first_name + ' ' + this.last_name;
-    },
-    toJSON : function(){
-      var obj = this.toObject();
-      obj.full_name = this.get_full_name();
-      return obj;
     }
   }
 };
