@@ -10,6 +10,8 @@
  * http://passportjs.org/guide/providers/
  */
 
+var local = require('./local.js');
+
 module.exports.passport = {
 
   google: {
@@ -17,6 +19,8 @@ module.exports.passport = {
       protocol: 'oauth2',
     strategy: require('passport-google-oauth').OAuth2Strategy,
     options: {
+      clientID: local.google.clientID,
+      clientSecret: local.google.clientSecret,
       scope: ['profile', 'email']
     }
   }
