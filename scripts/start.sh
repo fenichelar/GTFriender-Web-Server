@@ -6,7 +6,7 @@ forever stopall
 
 if [[ $* == *--log* ]] || [[ $* == *-l* ]]; then
   forever -w --sourceDir $SCRIPT_PATH/.. start app.js
-  forever logs 0 -f
+  forever logs app.js -f
 elif [[ $* == *--prod* ]] || [[ $* == *-p* ]]; then
   forever -w --sourceDir $SCRIPT_PATH/.. start app.js --prod
 else
