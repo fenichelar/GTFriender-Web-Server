@@ -19,7 +19,7 @@ module.exports = {
 
   models: {
     connection: 'localDiskDb',
-    migrate: 'migrate'
+    migrate: 'alter'
   }
 
 };
