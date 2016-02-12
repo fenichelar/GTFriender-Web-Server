@@ -32,8 +32,9 @@ module.exports = {
    * Set the log level in production environment to "silent"                 *
    ***************************************************************************/
 
-  // log: {
-  //   level: "silent"
-  // }
+  log: {
+  filePath: 'saisl.log'
+   //level: "silent"
+  }
 
 };
