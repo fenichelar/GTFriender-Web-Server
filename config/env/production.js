@@ -33,7 +33,7 @@ module.exports = {
    ***************************************************************************/
 
   log: {
-  filePath: 'saisl.log'
+  filePath: 'sails.log'
    //level: "silent"
   }
 

@@ -118,3 +118,4 @@ nbproject
 .node_history
 .forever
 coverage
+sails.log
