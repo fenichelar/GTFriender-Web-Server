@@ -9,12 +9,11 @@ module.exports = {
 
   attributes: {
     name: {
-      type: 'alphanumericdashed',
+      type: 'string',
       required: true
     },
     location: {
       type: 'string',
-      defaut: 'None',
       required: false
     },
     time: {
