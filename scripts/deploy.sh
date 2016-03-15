@@ -20,8 +20,8 @@ echo "<h1>Deploy Status</h1>"
 echo "<div>"
 echo "<h3>Stopping Server...</h3>"
 echo "<p>"
-cd $REPO_PATH && ps aux | grep '[n]ode'
-cd $REPO_PATH && sudo kill $(ps aux | grep '[n]ode' | awk '{print $2}')
+cd $REPO_PATH && ps aux | grep '[/]var/www/GTFriender-Web-Server/app.js'
+cd $REPO_PATH && sudo kill $(ps aux | grep '[/]var/www/GTFriender-Web-Server/app.js' | awk '{print $2}')
 echo "</p>"
 echo "<b>Done.</b>"
 echo "</div>"
