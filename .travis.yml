@@ -17,6 +17,7 @@ install:
   - npm install
 
 before_script:
+  - echo "module.exports = {};" > local.js
   - npm run jshint
 
 script:
