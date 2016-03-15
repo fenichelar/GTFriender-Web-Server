@@ -29,13 +29,13 @@
     "passport-google-oauth": "^1.0.0",
     "rc": "1.0.1",
     "sails": "~0.12.0",
-    "sails-auth": "fenichelar/sails-auth",
     "sails-disk": "~0.10.9",
     "sails-mongo": "^0.12.0",
-    "sails-permissions": "^2.2.0",
     "sails-swagger": "^0.5.1",
     "supertest": "^1.2.0",
     "swagger-ui": "^2.1.4",
+    "waterlock": "git+https://github.com/waterlock/waterlock.git",
+    "waterlock-google-auth": "git+https://github.com/waterlock/waterlock-google-auth.git",
     "winston": "^2.1.1"
   },
   "scripts": {

@@ -52,6 +52,10 @@ You will need the following things properly installed on your computer.
 
 Make use of the many generators for code, see [http://sailsjs.org/documentation/reference/command-line-interface/sails-generate](http://sailsjs.org/documentation/reference/command-line-interface/sails-generate) for more details.
 
+### Checking Code Quality
+
+* `npm run jshint`
+
 ### Running Tests
 
 * `npm test`

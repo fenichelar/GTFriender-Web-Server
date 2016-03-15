@@ -1,30 +1,18 @@
 /**
-* User.js
-*
-* @description :: TODO: You might write a short summary of how this model works and what it represents here.
-* @docs        :: http://sailsjs.org/#!documentation/models
-*/
+ * User
+ *
+ * @module      :: Model
+ * @description :: This is the base user model
+ * @docs        :: http://waterlock.ninja/documentation
+ */
 
-var _ = require('lodash');
-var _super = require('sails-permissions/api/models/User');
+module.exports = {
 
-_.merge(exports, _super);
-_.merge(exports, {
+  attributes: require('waterlock').models.user.attributes({
 
-  // Extend with custom logic here by adding additional fields, methods, etc.
-  attributes: {
-    gender: {
-      type: 'alpha',
-      required: false
-    },
-    first_name: {
-      type: 'alpha',
-      required: false
-    },
-    last_name: {
-      type: 'alpha',
-      required: false
-    },
+    /* e.g.
+    nickname: 'string'
+    */
     events: {
       collection: 'events',
       via: 'users'
@@ -33,5 +21,9 @@ _.merge(exports, {
       collection: 'comments',
       via: 'user'
     }
-  }
-});
+
+  }),
+
+  beforeCreate: require('waterlock').models.user.beforeCreate,
+  beforeUpdate: require('waterlock').models.user.beforeUpdate
+};
