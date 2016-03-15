@@ -17,7 +17,7 @@ install:
   - npm install
 
 before_script:
-  - echo "module.exports = {};" > local.js
+  - echo "module.exports={waterlock:{auth:{clientId:'',clientSecret:''},jwt:{secret:''}}};" > ./config/local.js
   - npm run jshint
 
 script:
