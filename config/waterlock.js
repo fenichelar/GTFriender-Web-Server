@@ -27,6 +27,7 @@ module.exports.waterlock = {
       allow: ['DOMAIN', 'USER@DOMAIN'],
       clientId: require('./local.js').waterlock.auth.clientId,
       clientSecret: require('./local.js').waterlock.auth.clientSecret,
+      redirectUri: require('./local.js').waterlock.auth.redirectUri,
       fieldMap: {
         // <model-field>: <google-field>,
         'first_name': 'given_name',
