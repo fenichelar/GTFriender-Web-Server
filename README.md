@@ -16,12 +16,6 @@ You will need the following things properly installed on your computer.
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Sails.js](http://sailsjs.org)
   - `npm install -g sails`
-* [Forever](https://github.com/foreverjs/forever)
-  - `npm install -g forever`
-* [Mocha](https://mochajs.org/)
-  - `npm install -g mocha`
-* [Istanbul](https://github.com/gotwarlost/istanbul)
-  - `npm install -g istanbul`
 
 ## Installation
 
@@ -34,19 +28,18 @@ You will need the following things properly installed on your computer.
 ### Running
 
 * Use one of the following
-  - `./scripts/start.sh` (start in development mode)
-  - `./scripts/start.sh --log` (start in development mode and view log)
-  - `./scripts/start.sh --prod` (start in production mode)
+  - `npm start` (start in development mode)
+  - `npm start --prod` (start in production mode)
 * Visit the app at [http://gtfriender.dev:1337](http://gtfriender.dev:1337)
 * The app with automatically update when code changes are made
 
 ### Viewing  Log
 
-* `./scripts/logs.sh`
+* `npm run log`
 
 ### Stopping
 
-* `./scripts/stop.sh`
+* `npm run stop`
 
 ### Code Generators
 

@@ -39,7 +39,9 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js",
+    "start": "forever -w start app.js",
+    "stop": "forever stopall",
+    "log": "forever logs app.js -f",
     "test": "mocha test/bootstrap.test.js test/unit/**/*.test.js",
     "jshint": "jshint ./api ./config ./test",
     "coverage": "istanbul cover _mocha -- test/bootstrap.test.js test/unit/**/*.test.js"
