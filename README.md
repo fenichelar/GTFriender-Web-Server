@@ -14,8 +14,6 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
-* [Sails.js](http://sailsjs.org)
-  - `npm install -g sails`
 
 ## Installation
 
