@@ -39,7 +39,7 @@ You will need the following things properly installed on your computer.
 
 ### Stopping
 
-* `npm run stop`
+* `npm stop`
 
 ### Code Generators
 
