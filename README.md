@@ -29,15 +29,6 @@ You will need the following things properly installed on your computer.
   - `npm start` (start in development mode)
   - `npm start --prod` (start in production mode)
 * Visit the app at [http://localhost:1337/](http://localhost:1337)
-* The app with automatically update when code changes are made
-
-### Viewing  Log
-
-* `npm run log`
-
-### Stopping
-
-* `npm stop`
 
 ### Code Generators
 

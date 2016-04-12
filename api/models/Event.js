@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-    name: {
+    title: {
       type: 'string',
       required: true
     },
@@ -16,8 +16,16 @@ module.exports = {
       type: 'string',
       required: false
     },
-    time: {
-      type: 'datetime',
+    start: {
+      type: 'date',
+      required: true
+    },
+    end: {
+      type: 'date',
+      required: true
+    },
+    allDay: {
+      type: 'boolean',
       required: true
     },
     activity: {
