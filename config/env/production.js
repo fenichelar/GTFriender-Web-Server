@@ -36,4 +36,9 @@ module.exports = {
   // level: "silent",
   // }
 
+  cors: {
+    allRoutes: true,
+    orgin: "https://gtfriender.com"
+  }
+
 };
