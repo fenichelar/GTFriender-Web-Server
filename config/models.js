@@ -28,6 +28,11 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   // migrate: 'alter',
-  schema: true
+  schema: true,
+
+  associations: {
+    list: "link",
+    detail: "link"
+  }
 
 };

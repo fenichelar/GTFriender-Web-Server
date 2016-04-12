@@ -14,7 +14,7 @@ module.exports = {
     nickname: 'string'
     */
     events: {
-      collection: 'events',
+      collection: 'event',
       via: 'users'
     },
     comments: {

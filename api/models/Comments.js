@@ -17,7 +17,7 @@ module.exports = {
       required: true
     },
     event: {
-      model: 'events',
+      model: 'event',
       required: true
     },
   }
