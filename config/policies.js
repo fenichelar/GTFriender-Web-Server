@@ -28,6 +28,9 @@ module.exports.policies = {
 
   //'*': 'hasJsonWebToken',
   '*': true,
+  UserController: {
+    jwt: true
+  },
   AuthController: true,
   SwaggerController: true
 
