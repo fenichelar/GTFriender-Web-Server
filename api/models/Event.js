@@ -16,6 +16,10 @@ module.exports = {
       type: 'string',
       required: false
     },
+    description: {
+      type: 'string',
+      required: false
+    },
     start: {
       type: 'date',
       required: true
