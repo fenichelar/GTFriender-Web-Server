@@ -26,7 +26,10 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
-  // '*': true,
+  //'*': 'hasJsonWebToken',
+  '*': true,
+  AuthController: true,
+  SwaggerController: true
 
   /***************************************************************************
   *                                                                          *
@@ -48,8 +51,4 @@ module.exports.policies = {
 		// before letting any users feed our rabbits
 		// feed : ['isNiceToAnimals', 'hasRabbitFood']
 	// }
-
-  SwaggerController: {
-    '*': true
-  }
 };
