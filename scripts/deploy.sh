@@ -55,7 +55,7 @@ echo "<div>"
 echo "<h3>Starting Server...</h3>"
 echo "<p>"
 timestamp=`date '+%Y_%m_%d__%H_%M_%S'`
-cd $REPO_PATH && sudo forever start -l $REPO_PATH/logs/$timestamp.log app.js
+cd $REPO_PATH && sudo forever start -l $REPO_PATH/logs/$timestamp.log app.js --prod
 echo "</p>"
 echo "<b>Done.</b>"
 echo "</div>"
